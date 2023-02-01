@@ -1,7 +1,8 @@
-@media only screen  and (width < 767px) {
+@media only screen  and (max-width: 767px) {
 
 *{
     font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,14 +11,9 @@ body {
 }
 
 .grid-container {
-    min-width: 311px;
-    max-width: 635px;
-    max-height: 722px;
     display: grid;
     column-gap: 0px;
-    text-align: center;
     margin: 72px 32px;
-    row-gap: 0px;
 }
 
 .grid-container2 .grid-item2{
@@ -31,7 +27,7 @@ body {
     grid-column: 1/3;
 }
 
-.grid-container2 .grid-item2 .grid-item2-content, .grid-container2 .grid-item3 .grid-item3-content {
+.grid-container .grid-item2 .grid-item2-content, .grid-container .grid-item3 .grid-item3-content {
     padding: 24px 24px;
 }
 
@@ -74,7 +70,7 @@ body {
     color: #FFFFFF;
 }
 
-.grid-item2-content .signup {
+.grid-container .grid-item2-content .signup {
     padding: 15px 102px;
 }
 
